@@ -9,7 +9,7 @@ import { Suspense } from "react";
 export default function App() {
   return (
     <div id="canvas-container">
-      <Suspense>
+      <Suspense fallback={null}>
         <Canvas>
           <Scene />
         </Canvas>
