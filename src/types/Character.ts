@@ -10,7 +10,15 @@ interface CharacterAttr {
   updatedAt: string;
   disabled: boolean;
 }
-
+interface AccessoriesStr {
+  background?: string | null;
+  body: string | null;
+  feet: string | null;
+  head: string | null;
+  hand_l: string | null;
+  hand_r: string | null;
+  hat: string | null;
+}
 interface Accessories {
   id: number;
   background: Accessory;
@@ -38,4 +46,4 @@ interface Accessory {
   color: null | string;
 }
 
-export type { Character, CharacterAttr, Accessories, Accessory };
+export type { Character, CharacterAttr, Accessories, AccessoriesStr, Accessory, AccessoriesGlb };
